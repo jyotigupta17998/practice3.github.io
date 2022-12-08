@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid cornflowerblue;
+}
+
+nav ul li a:hover {
+    background-color: crimson;
+}
+
+.right-content {
+    margin-left: 260px;
+}
+
+.ab {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.ab:nth-child(2) {
+    background-color: darkgray;
+}
+
+.ab:nth-child(3) {
+    background-color: rgb(146, 206, 221);
+}
+
+.ab:nth-child(4) {
+    background-color: rgba(181, 187, 129, 0.856);
+}
+
+.text-content h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.text-content p {
+    line-height: 2;
+}
+
+.text-content {
+    width: 80%;
+}
+
+#Home {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-area {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 10px double cornflowerblue;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+@media(max-width: 900px) {
+    nav {
+        background-color: white;
+    }
+    nav ul {
+        width: 100%;
+        height: 100px;
+    }
+    nav ul li {
+        border-bottom: none;
+        float: left;
+        display: inline-block;
+        margin-left: 50px;
+        text-align: center;
+        padding: 14px 16px;
+    }
+    nav ul li a:hover {
+        background-color: darkkhaki;
+        color: black;
+    }
+    .right-content {
+        margin-left: 0px;
+    }
+    .img-area {
+        display: none;
+    }
+    .text-content {
+        font-size: 20px;
+    }
+    .ab:nth-child(2) {
+        background-color: rgb(226, 211, 148);
+    }
+    .ab:nth-child(3) {
+        background-color: rgb(235, 168, 137);
+    }
+    .ab:nth-child(4) {
+        background-color: rgb(161, 235, 213);
+    }
+}
